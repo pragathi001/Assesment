@@ -1,0 +1,22 @@
+package Zoho;
+import java.util.Scanner;
+public class Jumb1{
+public static void main(String[] args){
+Scanner sc=new Scanner(System.in);
+String string = sc.nextInt()+"";
+for(int i=0;i<string.length();i++){
+int num =Integer.parseInt(string.charAt(i))+"";
+int leftdiff =0;
+int rightdiff =0;
+if(i>0){
+int leftside =Integer.parseInt(string.charAt(i-1));
+left diff =Math.abs(num-leftside);
+}
+if(i<string.length()){
+int rightside =Integer.parseInt(string.charAt(i+1))+"";
+right diff = Math.abs(num-rightside);
+if(leftdiff>1 && rightdiff>1){
+System.out.println(string +"is not a jumbled");
+}else{
+System.out.println(string+ is a jumbled);
+}
